@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block main %}
+    <div class="container my-4">
+        <h1 class="text-center mb-4">{{ title }}</h1>
+        <div class="text-center">
+            <img src="{{ graph }}" alt="Monitoring Graph" class="img-fluid" style="max-width: 80%;">
+        </div>
+        <br>
+        <div class="text-center">
+            <img src="{{ graph1 }}" alt="Monitoring Graph" class="img-fluid" style="max-width: 80%;">
+        </div>
+        <br>
+        <div class="text-center">
+            <img src="{{ graph2 }}" alt="Monitoring Graph" class="img-fluid" style="max-width: 80%;">
+        </div>
+    </div>
+{% endblock %}

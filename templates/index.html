@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<style>
+    .hero-section {
+        background-color: #005f73; /* AquaClean primary theme */
+        color: #f8f9fa; /* Light contrasting text */
+        padding: 50px 20px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .feature, .team-member {
+        margin: 20px 0;
+        padding: 20px;
+        border: 1px solid #94d2bd;
+        border-radius: 10px;
+        background-color: #e0fbfc;
+    }
+
+    .features-section, .team-section {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .features-section h2, .team-section h2 {
+        color: #003366;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .team-photo {
+        max-width: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="hero-section">
+    <h1 class="hero-title">Welcome to AquaClean</h1>
+    <p class="hero-description">
+        Transforming water cleanup and monitoring through innovation. Learn more about how we leverage technology for a cleaner, greener planet!
+    </p>
+</div>
+
+<div class="features-section">
+    <h2>Features</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="feature">
+                <h3>Real-Time Monitoring</h3>
+                <p>Analyze water quality data with interactive graphs and AI insights.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="feature">
+                <h3>Smart Cleaning</h3>
+                <p>Identify and classify waste with our intelligent garbage recognition system.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="team-section">
+    <h2>Meet the Team</h2>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="" alt="Team Member" class="team-photo">
+            <h4>Esbergen Erasyl</h4>
+            <p>ML coder; Coder</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="" alt="Team Member" class="team-photo">
+            <h4>Altynbekuly Ernal</h4>
+            <p>Engineer</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="" alt="Team Member" class="team-photo">
+            <h4>Beketbay Miras</h4>
+            <p>Web Developer; Coder</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="" alt="Team Member" class="team-photo">
+            <h4>Ongarov Ramazan</h4>
+            <p>CADer</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="" alt="Team Member" class="team-photo">
+            <h4>Orazbay Beknur</h4>
+            <p>Coder</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
